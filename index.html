@@ -2,43 +2,111 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Проверка</title>
+    <title>Визитка</title>
+
     <style>
-    .box{
-    text-align: center;
-    margin: 350px;
-    border: 1px solid black;
-    font-family: 'Helvetica', cursive;
-    transform: translateY(-200px);
-    }
+        body {
+            margin: 0;
+            padding: 0;
+            background: #f2f2f2;
+            font-family: Helvetica, Arial, sans-serif;
+        }
+
+        .box {
+            width: 420px;
+            margin: 100px auto;
+            padding: 30px 25px;
+            text-align: center;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+
+        .avatar {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+
+        .name {
+            font-size: 28px;
+            margin: 10px 0 5px;
+        }
+
+        .role {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 25px;
+        }
+
+        .contacts {
+            text-align: left;
+            font-size: 15px;
+            margin-bottom: 30px;
+        }
+
+        .contacts p {
+            margin: 8px 0;
+        }
+
+        .socials button {
+            border: none;
+            background: none;
+            cursor: pointer;
+            margin: 0 8px;
+        }
+
+        .socials img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            transition: transform 0.2s;
+        }
+
+        .socials img:hover {
+            transform: scale(1.1);
+        }
+
+        footer {
+            margin-top: 25px;
+            font-size: 13px;
+            color: #888;
+        }
     </style>
 </head>
+
 <body>
-    <div class="box">
-      <img src="https://i.postimg.cc/yNM1PtSZ/ptiza.webp" style="width: 150px;height: 150px;border-radius: 300px;">
-      <p style="font-size: 30px;font-family:'Helvetica', cursive;">Егор Егоров</p>
-      <p style="font-family:'Helvetica', cursive;">Ваша специализация или услуги</p>
-      <br>
-      <br>
-      <br>
-      <br>
-      <p style="transform: translateX(-200px);">✉ Email@gmail.com</p>
-      <p style="transform: translateX(-200px);">☎ +7999 123-45-67</p>
-      <p style="transform: translateX(-240px);">📍Адрес</p>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <button style="border-radius: 50px"><img src="https://i.postimg.cc/xdmjP7wS/Telegram-logo-svg.webp" style="width: 50px;height: 50px;"></img></button>
-      <button style="border-radius: 50px"><img src="https://i.postimg.cc/XqmDxHMw/Instagram-icon.png" style="width: 50px;height: 50px;"></img></button>
-      <button style="border-radius: 50px"><img src="https://i.postimg.cc/vmhqCHF7/Whats-App-svg.webp" style="width: 50px;height: 50px;"></img></button>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <footer>
-      <p>©2025 Егор Егоров</p>
+
+<div class="box">
+    <img src="https://i.postimg.cc/yNM1PtSZ/ptiza.webp" class="avatar">
+
+    <p class="name">Егор Егоров</p>
+    <p class="role">Ваша специализация или услуги</p>
+
+    <div class="contacts">
+        <p>✉ Email@gmail.com</p>
+        <p>☎ +7 999 123-45-67</p>
+        <p>📍 Адрес</p>
     </div>
 
+    <div class="socials">
+        <button>
+            <img src="https://i.postimg.cc/xdmjP7wS/Telegram-logo-svg.webp">
+        </button>
+        <button>
+            <img src="https://i.postimg.cc/XqmDxHMw/Instagram-icon.png">
+        </button>
+        <button>
+            <img src="https://i.postimg.cc/vmhqCHF7/Whats-App-svg.webp">
+        </button>
+    </div>
+
+    <footer>
+        © 2025 Егор Егоров
+    </footer>
+</div>
+
+</body>
+</html>
